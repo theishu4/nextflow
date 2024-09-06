@@ -1,11 +1,5 @@
 // clerk
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import { ClerkProvider, SignInButton, SignedOut } from "@clerk/nextjs";
 
 // others
 import type { Metadata } from "next";
@@ -52,9 +46,6 @@ export default function RootLayout({
           <SignedOut>
             <SignInButton />
           </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
           <Provider>{children}</Provider>
         </ClerkProvider>
       </body>
