@@ -10,19 +10,19 @@ body {
 
 @layer utilities {
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
 
   .flex-between {
-    @apply flex justify-between items-center;
+    @apply flex items-center justify-between;
   }
 
   .flex-start {
-    @apply flex justify-start items-center;
+    @apply flex items-center justify-start;
   }
 
   .card-wrapper {
-    @apply bg-light-900 dark:dark-gradient shadow-light-100 dar;
+    @apply dark:dark-gradient dar bg-light-900 shadow-light-100;
   }
 
   .btn {
@@ -38,7 +38,7 @@ body {
   }
 
   .markdown {
-    @apply max-w-full prose dark:prose-p:text-light-700 dark:pros;
+    @apply dark:pros prose max-w-full dark:prose-p:text-light-700;
   }
 
   .primary-gradient {
@@ -54,7 +54,7 @@ body {
   }
 
   .tab {
-    @apply min-h-full dark:bg-dark-400 bg-light-800 text-light-5;
+    @apply text-light-5 min-h-full bg-light-800 dark:bg-dark-400;
   }
 }
 
@@ -222,6 +222,6 @@ code {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground dark:text-light-900;
   }
 }
