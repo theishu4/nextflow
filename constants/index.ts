@@ -21,38 +21,52 @@ export const themes: Theme[] = [
 export const sidebarLinks: SidebarLink[] = [
   {
     imgURL: "/assets/icons/home.svg",
+    iconName: "house",
     route: "/",
     label: "Home",
+    priority: "high",
   },
   {
     imgURL: "/assets/icons/users.svg",
+    iconName: "users-round",
     route: "/community",
     label: "Community",
+    priority: "high",
   },
   {
     imgURL: "/assets/icons/star.svg",
+    iconName: "bookmark",
     route: "/collection",
     label: "Collections",
+    priority: "high",
   },
   {
     imgURL: "/assets/icons/suitcase.svg",
+    iconName: "briefcase-business",
     route: "/jobs",
     label: "Find Jobs",
+    priority: "high",
   },
   {
     imgURL: "/assets/icons/tag.svg",
+    iconName: "tag",
     route: "/tags",
     label: "Tags",
+    priority: "low",
   },
-  {
-    imgURL: "/assets/icons/user.svg",
-    route: "/profile",
-    label: "Profile",
-  },
+  // {
+  //   imgURL: "/assets/icons/user.svg",
+  //   iconName: "circle-user-round",
+  //   route: "/profile",
+  //   label: "Profile",
+  //   priority: "high",
+  // },
   {
     imgURL: "/assets/icons/question.svg",
+    iconName: "circle-help",
     route: "/ask-question",
     label: "Ask a question",
+    priority: "low",
   },
 ];
 export const BADGE_CRITERIA = {

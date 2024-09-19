@@ -50,8 +50,9 @@ const NavContent = () => {
 const MobileNav = () => {
   return (
     <Sheet>
-      <SheetTrigger>
-        <AlignJustify size={32} className="cursor-pointer sm:hidden" />
+      {/*  sm:hidden */}
+      <SheetTrigger className="sm:hiddenN">
+        <AlignJustify size={32} />
         <span className="sr-only">More Options</span>
       </SheetTrigger>
       <SheetContent

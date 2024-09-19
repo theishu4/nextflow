@@ -16,8 +16,16 @@ export type ThemeContextTypes = {
 
 export interface SidebarLink {
   imgURL: string;
+  iconName:
+    | "house"
+    | "users-round"
+    | "bookmark"
+    | "briefcase-business"
+    | "tag"
+    | "circle-help";
   route: string;
   label: string;
+  priority: "high" | "low";
 }
 export interface Job {
   id?: string;
